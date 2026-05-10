@@ -1,0 +1,19 @@
+C:\Users\mehit>cd Desktop\DS_EXP\EXP2 
+C:\Users\mehit\Desktop\DS_EXP\EXP2>java -version openjdk version "1.8.0_482" OpenJDK Runtime Environment (build 1.8.0_482-bu482) OpenJDK 64-Bit Server VM (build 25.482-b08, mixed mode) 
+C:\Users\mehit\Desktop\DS_EXP\EXP2>idlj -fall CalculatorApp.idl 
+C:\Users\mehit\Desktop\DS_EXP\EXP2>javac CalculatorApp\*.java *.java 
+CalculatorApp\_CalculatorStub.java:110: warning: IORCheckImpl is internal proprietary API and may be removed in a future release com.sun.corba.se.impl.orbutil.IORCheckImpl.check(str, "CalculatorApp._CalculatorStub"); ^ Note: CalculatorApp\CalculatorPOA.java uses unchecked or unsafe operations. Note: Recompile with -Xlint:unchecked for details. 1warning 
+C:\Users\mehit\Desktop\DS_EXP\EXP2>orbd -ORBInitialPort 1050 -ORBInitialHost localhost 
+
+Server Output: C:\Users\mehit>cd Desktop\DS_EXP\EXP2 
+C:\Users\mehit\Desktop\DS_EXP\EXP2>java CalculatorServer -ORBInitialPort 1050 -ORBInitialHost localhost
+CalculatorServer ready and waiting... 
+
+Client Output: 
+
+C:\Users\mehit>cd Desktop\DS_EXP\EXP2 
+C:\Users\mehit\Desktop\DS_EXP\EXP2>java CalculatorClient -ORBInitialPort 1050 -ORBInitialHost localhost 
+
+Addition: 10.0 + 5.0 = 15.0 Subtraction: 10.0 - 5.0 = 5.0 Multiplication: 10.0 * 5.0 = 50.0 Division: 10.0 / 5.0 = 2.0 
+
+C:\Users\mehit\Desktop\DS_EXP\EXP2>
