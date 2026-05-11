@@ -1,0 +1,2 @@
+javac -cp .:$MPJ_HOME/lib/mpj.jar ArrSum.java
+mpjrun.sh -np 4 ArrSum
